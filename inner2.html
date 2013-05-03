@@ -1,0 +1,550 @@
+<!DOCTYPE HTML>
+<html>
+<!--[if IE 6]> <html class="ie6 "> <![endif]-->
+<!--[if IE 7]> <html class="ie7 "> <![endif]-->
+<!--[if IE 8]> <html class="ie8 "> <![endif]-->
+<!--[if IE 9]> <html class="ie9 "> <![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>inner2</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/960_12_0_0.css" rel="stylesheet" type="text/css">
+<link  href="css/respond.css" rel="stylesheet" type="text/css">
+
+<link href='http://fonts.googleapis.com/css?family=Asap:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+
+<!--[if IE]><style type="text/css">.pie, .social_box, .main_search, .tad_panel img, #carousel img,  .search_box2, .text_field1, .product_field ul li, .search_field, .sidebar_cont, .sidebar_cont h2 a, .price_info, 
+.social_box2 span a, .tad_nav ul li a, .tad_panel span, .event_field, .inner_sidebar_cont, .slider_area, .sidebar_cont2, .button2, .review_field, .review_bottom, .review_bottom  a, .tab_cont, .tab_cont2, .tab_cont2_top, .day_box ul li a, .cont_tad ul li a span, .cont_tad_area, .text_field2, .text_area2, .text_field3, .botton3 a, .botton4 a, .social_connection, .search_area, .cont_search_top, .text_field6, .button9 , .posted_img span a, .posted_cont_info, .posted_add img, .social_add, .social_add2 span a, .post_box, .signup_cont, .text_field4, .button5, .plan_field ul li, .plan_box, .plan_info ul li, .button6, {behavior:url(PIE.htc);} .outer{filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./img/body_bg1.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./img/body_bg1.jpg', sizingMethod='scale')";}</style><![endif]-->
+<script type="text/javascript" src="js/jquery-1.8.2.min.js" ></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.carouFredSel.js" ></script>
+
+
+<script type="text/javascript">
+	$(window).load(function() {
+		$(".tab1").tabs(".tad_pane3");
+		$(".tab2").tabs(".tad_pane2");
+
+		$('.tab_slider').cycle({ 
+        fx:     'scrollHorz', 
+		prev:	'.prev2',
+		next:	'.next2',
+        pager:  '.pag2',  
+		timeout: 8000	
+   		});
+
+
+
+				$('#carousel').carouFredSel({
+					responsive: true,
+					circular: false,
+					auto: false,
+					items: {
+						visible: 1,
+						width: 200,
+						height: '56%'
+					},
+					scroll: {
+						fx: 'fade'
+					}
+				});
+
+				$('#thumbs').carouFredSel({
+					responsive: true,
+					circular: false,
+					infinite: false,
+					auto: false,
+					prev: '.prev4',
+					next: '.next4',
+					items: {
+						visible: {
+							min: 2,
+							max: 6
+						},
+				
+					}
+				});
+
+				$('#thumbs a').click(function() {
+					$('#carousel').trigger('slideTo', '#' + this.href.split('#').pop() );
+					$('#thumbs a').removeClass('selected');
+					$(this).addClass('selected');
+					return false;
+				});
+			
+			
+			
+			
+			
+			
+		
+		 
+	});
+</script>
+
+<script type="text/javascript" >
+	document.createElement("header");
+	document.createElement("nav");
+	document.createElement("section");
+	document.createElement("article");
+	document.createElement("aside");
+	document.createElement("footer");
+</script>
+</head>
+<body>
+<div class="outer">
+	<!--[header]-->
+    <section class="container_12 ">
+    	<div class="grid_12 ">
+            <header class="header">
+              <div class="social_box">
+                    <a href="#">Login wih Facebook</a>
+                </div>
+                    
+                <div class="logo fl-lt"><a href="#"><img src="img/logo.png" alt=""></a></div>
+                <div class="nav fl-lt">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">BROWSE</a></li>
+                        <li><a href="#">HOW IT WORKS</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="header_right fl-rt">
+                    <div class="header_right_top">
+                        <ul>
+                            <li><a href="#">SIGN UP</a></li>
+                            <li><a href="#">LOGIN</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </header>
+        </div>
+        <div class="clear"></div>
+    </section>
+	
+    <!--[header end]-->
+    <!--[content_area ]-->
+    <section class="container_12">
+        <section class="content_area">
+             <!--[main_cont ]-->
+            <section class="inner_content fl-lt">
+            	<div class="social_box2">
+                	<div class="social_link">
+                    	<a href="#"><img src="img/facebook.png" alt=""></a>
+                        <a href="#"><img  src="img/twitter2.png" alt=""></a>
+                    </div>
+                    <span><a href="#">FOLLOW EVENT</a></span>
+                </div>
+                <h2>ABC Hip Hop Event</h2>
+                <div class="content_field">
+                	<div class="content_tad">
+                    	<div class="tad_nav">
+                        	<ul class="tab1">
+                            	<li><a href="#" class="current first">PHOTOS</a></li>
+                                <li><a href="#">SCHEDULE</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="content_tad_info">
+                        	<div class="tad_pane3">
+                            	<div class="show_box">
+                                    <div id="carousel">
+                                    	<ul>
+                                        <li id="pic1"><img  src="img/large_pic1.jpg" /></li>
+                                        <li id="pic2"><img src="img/large_pic2.jpg" /></li>
+                                        <li id="pic1"><img  src="img/large_pic1.jpg" /></li>
+                                        <li id="pic2"><img src="img/large_pic2.jpg" /></li>
+                                        <li id="pic1"><img  src="img/large_pic1.jpg" /></li>
+                                        <li id="pic2"><img src="img/large_pic2.jpg" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            	
+                                <div class="slider_area">
+                                	<div class="prev4"><a href="#"></a></div>
+                                    <div class="next4 "><a href="#"></a></div>
+                                	<div class="slider_cont " id="thumbs-wrapper">
+                                    	<ul id="thumbs">
+                                        	<li><a href="#pic1"><img  src="img/slide_small.jpg"  alt=""></a></li>
+                                            <li><a href="#pic2"><img src="img/slide_small.jpg" alt=""></a></li>
+                                            <li><a href="#pic1"><img src="img/slide_small.jpg" alt=""></a></li>
+                                            <li><a href="#pic2"><img src="img/slide_small.jpg" alt=""></a></li>
+                                            <li><a href="#pic1"><img src="img/slide_small.jpg" alt=""></a></li>
+                                            <li><a href="#pic2"><img src="img/slide_small.jpg" alt=""></a></li>
+                                            
+                                            <li><a href="#pic1"><img  src="img/slide_small.jpg"  alt=""></a></li>
+                                            <li><a href="#pic2"><img src="img/slide_small.jpg" alt=""></a></li>
+                                            <li><a href="#pic1"><img src="img/slide_small.jpg" alt=""></a></li>
+                                            <li><a href="#pic2"><img src="img/slide_small.jpg" alt=""></a></li>
+                                            <li><a href="#pic1"><img src="img/slide_small.jpg" alt=""></a></li>
+                                            <li><a href="#pic2"><img src="img/slide_small.jpg" alt=""></a></li>
+                                            
+                                        </ul>
+                                        <div class="clear"></div>
+                                    </div>
+                                 </div>
+                                 <div class="clear"></div>
+                            </div>
+                            
+                            
+                            
+                            <div class="tad_pane3">
+                              <div class="tab_cont2">
+                                <div class="tab_cont2">
+                                  <div class="tab_cont2_top">
+                                    <div class="day_box">
+                                      <ul>
+                                        <li><a href="#" class="current">MONDAY</a></li>
+                                        <li><a href="#">Tuesday</a></li>
+                                        <li><a href="#">Wednesday</a></li>
+                                        <li><a href="#">Thursday</a></li>
+                                        <li><a href="#">Friday</a></li>
+                                        <li><a href="#">Saturday</a></li>
+                                         <li><a href="#">Sunday</a></li>
+                                      </ul>
+                                      <div class="clear"></div>
+                                    </div>
+                                    <div class="time_box">
+                                    	<ul>
+                                        	<li class="frist">Time</li>
+                                            <li>Class</li>
+                                            <li>Level</li>
+                                            <li class="last">Teacher</li>
+                                        </ul>
+                                    	<div class="clear"></div>	
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="tab_cont2_field">
+                                  		<div class="tab_cont2_area">
+                                        	<ul>
+                                                <li class="color">
+                                                    <em class="frist">2:00-3:00PM</em>
+                                                    <em>Hip Hop</em>
+                                                    <em>Int/Adv</em>
+                                                     <em class="last">Dante7</em>
+                                                </li>
+                                                 <li >
+                                                     <em class="frist">2:00-3:00PM</em>
+                                                    <em>Hip Hop</em>
+                                                    <em>Int/Adv</em>
+                                                    <em class="last">Dante7</em>
+                                                </li>
+                                                
+                                                 <li class="color">
+                                                     <em class="frist">2:00-3:00PM</em>
+                                                    <em>Modern Hip Hop</em>
+                                                    <em>Int/Adv</em>
+                                                    <em class="last">Kristin Lorello</em>
+                                                </li>
+                                                 <li >
+                                                    <em class="frist">2:00-3:00PM</em>
+                                                    <em>Hip Hop</em>
+                                                    <em>Int/Adv</em>
+                                                    <em class="last">Dante7</em>
+                                                </li>
+                                                
+                                                 <li class="color">
+                                                     <em class="frist">2:00-3:00PM</em>
+                                                    <em>Modern Hip Hop</em>
+                                                    <em>Int/Adv</em>
+                                                    <em class="last">Kristin Lorello</em>
+                                                </li>
+                                                 <li >
+                                                    <em class="frist">2:00-3:00PM</em>
+                                                    <em>Hip Hop</em>
+                                                    <em>Int/Adv</em>
+                                                    <em class="last">Dante7</em>
+                                                </li>
+                                                
+                                                 <li class="color">
+                                                     <em class="frist">2:00-3:00PM</em>
+                                                    <em>Modern Hip Hop</em>
+                                                    <em>Int/Adv</em>
+                                                    <em class="last">Kristin Lorello</em>
+                                                </li>
+                                                 <li >
+                                                    <em class="frist">2:00-3:00PM</em>
+                                                    <em>Hip Hop</em>
+                                                    <em>Int/Adv</em>
+                                                    <em class="last">Dante7</em>
+                                                </li>
+                                                
+                                                 <li class="color">
+                                                     <em class="frist">2:00-3:00PM</em>
+                                                    <em>Modern Hip Hop</em>
+                                                    <em>Int/Adv</em>
+                                                    <em class="last">Kristin Lorello</em>
+                                                </li>
+                                                 <li >
+                                                    <em class="frist">2:00-3:00PM</em>
+                                                    <em>Hip Hop</em>
+                                                    <em>Int/Adv</em>
+                                                    <em class="last">Dante7</em>
+                                                </li>
+                                                
+                                                 <li class="color">
+                                                     <em class="frist">2:00-3:00PM</em>
+                                                    <em>Hip Hop</em>
+                                                    <em>Int/Adv</em>
+                                                    <em class="last">Dante7</em>
+                                                </li>
+                                                 <li >
+                                                     <em class="frist">2:00-3:00PM</em>
+                                                    <em>Dancehall Funk</em>
+                                                    <em>Int/Adv</em>
+                                                    <em class="last">Dante7</em>
+                                                </li>
+                                                
+                                                 <li class="color">
+                                                     <em class="frist">2:00-3:00PM</em>
+                                                    <em>Hip Hop</em>
+                                                    <em>Int/Adv</em>
+                                                    <em class="last">Dante7</em>
+                                                </li>
+                                                 <li >
+                                                    <em class="frist">2:00-3:00PM</em>
+                                                    <em>Hip Hop</em>
+                                                    <em>Int/Adv</em>
+                                                    <em class="last">Dante7</em>
+                                                </li>
+                                                
+                                                 <li class="color">
+                                                     <em class="frist">2:00-3:00PM</em>
+                                                    <em>Hip Hop</em>
+                                                    <em>Int/Adv</em>
+                                                    <em class="last">Dante7</em>
+                                                </li>
+                                                 <li >
+                                                     <em class="frist">2:00-3:00PM</em>
+                                                    <em>Hip Hop</em>
+                                                    <em>Int/Adv</em>
+                                                    <em class="last">Dante7</em>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                  </div>
+                                  
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            
+                            
+                      </div>
+                    </div>
+                    
+                    <div class="content_tad">
+                    	<div class="tad_nav">
+                        	<ul class="tab2">
+                            	<li><a href="#" class="current first">DESCRIPTION</a></li>
+                                <li><a href="#">INSTRUCTORS</a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="content_tad_info">
+                        	<div class="tad_pane1 tad_pane2">
+                            	<p>I'm the Chief Hip Hop Trainer isi ut aliquip ex ea commodo consequat. Duis aute irure dolor in pariatur. Excepteur sint consequat. I'm the Chief Hip Hop Trainer isi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur folors. I'm the Chief Hip Hop Trainer isi ut aliquip ex ea commodo consequat. Duis aute irure dolor in pariatur. Excepteur sint consequat. I'm the Chief Hip Hop Trainer isi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida isi ut aliquip ex ea commodo consequat. sed pulvinar ante. Vivamus vestibulum euismod tellus, quis sodales libero blandit sit amet. Nullam lacinia nulla id leo egestas id ultrices arcu suscipit. Fusce eu lacus non neque laoreet imperdiet ornare vitae ipsum. Nullam</p>
+                            </div>
+                            <div class="tad_pane1  tad_pane2 tab_cont">
+                            	<div class="tab_cont_top">
+                                	<div class="tab_slider">
+                                    	<div class="tab_slider_panel">
+                                        	<ul>
+                                            	<li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                                <li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                                
+                                                <li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                                <li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                            </ul>
+                                            <div class="clear"></div>
+                                        </div>
+                                        
+                                        <div class="tab_slider_panel">
+                                        	<ul>
+                                            	<li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                                <li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                                
+                                                <li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                                <li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                            </ul>
+                                            <div class="clear"></div>
+                                        </div>
+                                        
+                                        <div class="tab_slider_panel">
+                                        	<ul>
+                                            	<li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                                <li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                                
+                                                <li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                                <li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                            </ul>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="tab_slider_panel">
+                                        	<ul>
+                                            	<li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                                <li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                                
+                                                <li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                                <li>
+                                                	<img src="img/post_img1.png" alt="">
+                                                	<a href="#">Marcus Simon </a>
+                                                    <span>Hip-Hop Instructor</span>
+                                                </li>
+                                            </ul>
+                                            <div class="clear"></div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="pager_box2">
+                                    <span class="next2 fl-rt"><a href="#"></a></span>
+                                    <div class="pager2 pag2 fl-rt">
+                                       
+                                   </div>
+                                    <span class="prev2 fl-rt"><a href="#"></a></span>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+               
+                
+            </section>
+             <!--[main_cont end ]-->
+             <!--[inner_sidebar  ]-->
+          <aside class="inner_sidebar inner_sidebar2 fl-rt">
+                <div class="inner_sidebar_cont sidebar_cont2">
+                	<div class="inner_sidebar_cont_top noborder1">
+                    	<h2>Address</h2>
+                        <span>STREET: <strong>986 W. 17th Street</strong></span>
+                        <span>CITY AND STATE: <strong>986 W. 17th Street</strong></span>
+                        <span>ZIP CODE: <strong>0932</strong></span>
+                    </div>
+                    <span class="fl-rt"><a href="#" class="button2">GET DIRECTIONS</a></span>
+                	<div class="clear"></div>
+            </div>
+      			<div class="map2"></div>
+                
+      <div class="review_cont">
+                	<h2><span>REVIEWS</span></h2>
+                    <div class="review_field">
+                    	<ul>
+                        	<li>
+                            	<div class="review_pic fl-lt"><img src="img/post_img1.png" alt=""> </div>
+                            	<div class="review_info fl-lt">
+                                	<h3><a href="#">Marcus Simon</a></h3>
+                                    <span>Dance Instructor </span>
+                                    <p>"isi ut aliquip ex ea commodo consequat. Duis aute irure dolor in"</p>
+                                	<em>Aug 10, 2012</em>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li class="noborder2">
+                            	<div class="review_pic fl-lt"><img src="img/post_img2.png" alt=""> </div>
+                            	<div class="review_info fl-lt">
+                                	<h3><a href="#">Marcus Simon</a></h3>
+                                    <span>Dance Instructor </span>
+                                    <p>"isi ut aliquip ex ea commodo consequat. Duis aute irure dolor in"</p>
+                                	<em>Aug 10, 2012</em>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="review_bottom">
+                        	<a href="#">WRITE A REVIEW</a>
+                            <div class="clear"></div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                
+        
+            
+   	    </aside>
+          <span class="map2"><img src="img/map2.jpg" alt=""></span>            <!--[inner_sidebar end ]-->
+        <div class="clear"></div>
+    	</section>
+    </section>
+    <!--[content_area end]-->
+</div>	
+</body>
+</html>
